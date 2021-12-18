@@ -1,1 +1,8 @@
-#enter txt here
+This is the implementation of STN for the GTSRB problem
+
+For input files:
+1. Download the dataset from kaggle or benchmark.ini.rub.de
+2. place the test and train folders inside the inputs folder.
+3. change and set appropriate paths in all the .py files
+  a. signnames.csv has been provided, it has all the 43 class names, used for producing proper output
+4. run preprocess.py followed by train.py to start training. finally run test.py to get prediction over some test images
