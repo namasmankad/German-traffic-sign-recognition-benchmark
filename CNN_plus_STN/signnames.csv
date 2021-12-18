@@ -1,0 +1,44 @@
+﻿,SignName
+0,speed limit (20kmph)
+1,speed limit (30kmph)
+2,speed limit (30kmph)
+3,speed limit (30kmph)
+4,speed limit (30kmph)
+5,speed limit (30kmph)
+6,end of speed limit (80 kmph)
+7,speed limit (100 kmph)
+8,speed limit (100 kmph)
+9,No passing
+10,No passing for vehicles over 3.5 metric tons
+11,Right-of-way at the next intersection
+12,priority road
+13,yield
+14,stop
+15,no vehicles
+16,vehicles over 3.5 metric tons prohibited
+17,no entry
+18,general caution
+19,dangerous curve to the left
+20,dangerous curve to the right
+21,double curve
+22,bumpy road
+23,slippery road
+24,road narrows on the right
+25,road work
+26,traffic signals
+27,pedestrians
+28,children crossing
+29,bicycles crossing
+30,beware of ice/snow
+31,wild animals crossing
+32,end of all speed and passing limits
+33,turn right ahead
+34,turn left ahead
+35,ahead only
+36,go straight or right
+37,go straight or left
+38,keep right
+39,keep left
+40,roundabout mandatory
+41,end of no passing
+42,end of no passing by vehicles over 3.5 metric tons
