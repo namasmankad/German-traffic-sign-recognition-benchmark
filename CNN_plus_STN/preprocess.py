@@ -4,7 +4,7 @@ import numpy as np
 
 from tqdm import tqdm
 
-root_path = '../input/german_traffic_sign/GTSRB/Final_Training/Images/'
+root_path = '../input/GTSRB/Training/Images/'
 
 all_paths = os.listdir(root_path)
 all_paths.sort()
@@ -22,6 +22,6 @@ for i, path in tqdm(enumerate(all_paths), total=len(all_paths)):
             counter += 1
 
 data = data.sample(frac=1).reset_index(drop=True)
-data.to_csv('../input/german_traffic_sign/GTSRB/data.csv', index=False)
+data.to_csv('../input/GTSRB/data.csv', index=False)
 
 print(data.head(5))
