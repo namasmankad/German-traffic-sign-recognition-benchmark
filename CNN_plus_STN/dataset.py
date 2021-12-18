@@ -38,7 +38,7 @@ class GTSRDataset(Dataset):
             'label': torch.tensor(label, dtype=torch.long)
         }
 
-df = pd.read_csv('../input/german_traffic_sign/GTSRB/data.csv', 
+df = pd.read_csv('../input/GTSRB/data.csv', 
                  nrows=5000)
 
 X = df.image_path.values
@@ -69,7 +69,7 @@ visualize = False
 if visualize:
     for i in range(1):
         sign_df = pd.read_csv(
-            '../input/german_traffic_sign/GTSRB/Final_Training/signnames.csv'
+            '../input/GTSRB/Training/signnames.csv'
             )
         sample = train_data[i]
         image = sample['image']
