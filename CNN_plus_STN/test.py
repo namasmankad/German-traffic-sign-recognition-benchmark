@@ -14,16 +14,16 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = Net().to(device)
 checkpoint = torch.load('../outputs/model.pth')
 model.load_state_dict(checkpoint['model_state_dict'])
-root_dir = '../input/german_traffic_sign/GTSRB/Final_Test/Images/'
+root_dir = '../inputs/GTSRB/Test/Images/'
 
 test_df = pd.read_csv(
-    '../input/german_traffic_sign/GTSRB/Final_Test/GTSRB_Final_Test_GT/GT-final_test.csv',
+    '../inputs/GTSRB/Test/GTSRB_Final_Test_GT/GT-final_test.csv',
     delimiter=';', nrows=10
     )
 gt_df = test_df.set_index('Filename', drop=True)
 
 sign_df = pd.read_csv(
-        '../input/german_traffic_sign/GTSRB/Final_Training/signnames.csv'
+        '../inputs/GTSRB/Training/signnames.csv'
         )
 
 aug = albumentations.Compose([
